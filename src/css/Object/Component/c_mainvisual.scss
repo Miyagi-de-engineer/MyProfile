@@ -1,0 +1,27 @@
+/* MainVisual */
+
+.c-mainvisual{
+  position: relative;
+  img {
+      height: 700px;
+      object-fit: cover;
+      object-position: 0 15%;
+      -webkit-clip-path:polygon(0 0,100% 0%,100% 85%,0% 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+  h2  {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      z-index: 1;
+      font-size: 5vw;
+      color: #fff;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .c-mainvisual img{
+    height: auto;
+  }
+}
