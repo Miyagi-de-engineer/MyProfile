@@ -432,9 +432,9 @@ header nav li a {
         bottom: 0; } }
 
 /* MainVisual */
-.c-mainvisual {
+.p-mainvisual {
   position: relative; }
-  .c-mainvisual img {
+  .p-mainvisual img {
     height: 700px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -442,7 +442,7 @@ header nav li a {
        object-position: 0 15%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); }
-  .c-mainvisual h2 {
+  .p-mainvisual h2 {
     position: absolute;
     top: 50%;
     left: 10%;
@@ -453,7 +453,78 @@ header nav li a {
     color: #fff; }
 
 @media screen and (max-width: 1199px) {
-  .c-mainvisual img {
+  .p-mainvisual img {
     height: auto; } }
+
+.p-topics {
+  padding: 120px; }
+  .p-topics .content-wrapper {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex; }
+    .p-topics .content-wrapper .heading {
+      width: 35%; }
+    .p-topics .content-wrapper .content {
+      width: 65%; }
+      .p-topics .content-wrapper .content table {
+        width: 100%;
+        margin: 0 0 25px 0; }
+        .p-topics .content-wrapper .content table th {
+          padding: 20px 2em 20px 0;
+          border-bottom: 1px dotted; }
+        .p-topics .content-wrapper .content table td {
+          border-bottom: 1px dotted; }
+        .p-topics .content-wrapper .content table tr:last-of-type th,
+        .p-topics .content-wrapper .content table tr:last-of-type td {
+          border-bottom: none; }
+      .p-topics .content-wrapper .content .btn {
+        text-align: -webkit-right; }
+        .p-topics .content-wrapper .content .btn a {
+          display: block;
+          font-size: 12.8px;
+          font-size: 0.8rem;
+          color: #000;
+          border: 1px solid #000;
+          width: 200px;
+          line-height: 60px;
+          text-align: center;
+          margin: 0 0 auto; }
+          .p-topics .content-wrapper .content .btn a:hover {
+            background: #333;
+            color: #fff; }
+
+@media screen and (max-width: 1199px) {
+  .p-topics {
+    padding: 50px 5vw; }
+    .p-topics .content-wrapper {
+      display: block; }
+      .p-topics .content-wrapper .heading {
+        width: 100%; }
+        .p-topics .content-wrapper .heading h2 {
+          text-align: center;
+          margin-bottom: 5vw; }
+      .p-topics .content-wrapper .content {
+        width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .p-topics {
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto; }
+    .p-topics .content-wrapper .content .btn a {
+      width: 35%;
+      min-width: 200px;
+      margin: 0 auto; } }
+
+@media screen and (max-width: 479px) {
+  .p-topics .content-wrapper .content th {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 1.25em 0 0 0;
+    border-bottom: 0; }
+  .p-topics .content-wrapper .content td {
+    display: block;
+    width: 100%; } }
 
 /*# sourceMappingURL=maps/style.css.map */

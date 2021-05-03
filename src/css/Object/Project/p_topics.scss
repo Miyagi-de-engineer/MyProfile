@@ -1,0 +1,105 @@
+.p-topics{
+  padding: 120px;
+
+  .content-wrapper{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    .heading{
+      width: 35%;
+    }
+
+    .content{
+      width: 65%;
+
+          table {
+            width: 100%;
+            margin: 0 0 25px 0;
+              th {
+              padding: 20px 2em 20px 0;
+              border-bottom: 1px dotted;
+              }
+              td {
+                border-bottom: 1px dotted;
+              }
+              tr {
+                &:last-of-type th,
+                &:last-of-type td {
+                  border-bottom: none;
+                }
+              }
+          }
+          .btn {
+            text-align: -webkit-right;
+
+            a{
+              display: block;
+              font-size: 0.8rem;
+              color: #000;
+              border: 1px solid #000;
+              width: 200px;
+              line-height: 60px;
+              text-align: center;
+              margin: 0 0 auto;
+                &:hover{
+                  background: #333;
+                  color: #fff;
+                }
+            }
+          }
+        }
+    }
+}
+
+@media screen and (max-width:1199px) {
+  .p-topics {
+    padding: 50px 5vw;
+
+    .content-wrapper {
+      display: block;
+
+        .heading {
+          width: 100%;
+          h2{
+            text-align: center;
+            margin-bottom: 5vw;
+          }
+        }
+        .content {
+          width: 100%;
+        }
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  .p-topics{
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+    .content-wrapper{
+        .content .btn a {
+        width: 35%;
+        min-width: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:479px) {
+  .p-topics .content-wrapper .content {
+    th {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 1.25em 0 0 0;
+      border-bottom: 0;
+    }
+    td {
+      display: block;
+      width: 100%;
+    }
+  }
+}

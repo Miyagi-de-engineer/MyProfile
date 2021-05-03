@@ -1,6 +1,6 @@
 /* MainVisual */
 
-.c-mainvisual{
+.p-mainvisual{
   position: relative;
   img {
       height: 700px;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width:1199px) {
-  .c-mainvisual img{
+  .p-mainvisual img{
     height: auto;
   }
 }
