@@ -527,4 +527,60 @@ header nav li a {
     display: block;
     width: 100%; } }
 
+.p-skillset {
+  background-image: url(../images/skillset.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  width: 100%; }
+  .p-skillset::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3); }
+  .p-skillset .content-wrapper .content {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 2; }
+    .p-skillset .content-wrapper .content h2 {
+      color: #fff;
+      text-align: left; }
+    .p-skillset .content-wrapper .content p {
+      color: #fff;
+      text-align: left;
+      margin-bottom: 70px; }
+      .p-skillset .content-wrapper .content p .btn {
+        margin: 0; }
+      .p-skillset .content-wrapper .content p a {
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-size: 0.875rem;
+        border: 1px solid #fff;
+        width: 200px;
+        line-height: 60px;
+        text-align: center; }
+        .p-skillset .content-wrapper .content p a:hover {
+          background: #fff;
+          color: #333; }
+
+@media screen and (max-width: 479px) {
+  .p-skillset .content-wrapper .content {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .p-skillset .content-wrapper .content h2, .p-skillset .content-wrapper .content p {
+      text-align: center; }
+    .p-skillset .content-wrapper .content .btn a {
+      width: 30%;
+      min-width: 200px;
+      margin: 0 auto; } }
+
 /*# sourceMappingURL=maps/style.css.map */
