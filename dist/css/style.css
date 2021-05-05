@@ -598,31 +598,35 @@ header nav li a {
     .p-portfolio .content-wrapper ul li {
       width: 48%;
       position: relative; }
-      .p-portfolio .content-wrapper ul li figure::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding-top: 43%;
-        background: rgba(50, 50, 50, .7);
-        z-index: 1;
-        -webkit-transition: all .6s ease;
-        transition: all .6s ease; }
-      .p-portfolio .content-wrapper ul li a:hover figure::after {
-        background: rgba(50, 50, 50, .4);
-        -webkit-transition: all .6s ease;
-        transition: all .6s ease; }
-      .p-portfolio .content-wrapper ul li span {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        z-index: 2;
-        color: #fff;
-        font-size: 32px;
-        font-size: 2rem;
-        text-align: center; }
+      .p-portfolio .content-wrapper ul li a .hover-parent {
+        width: 250px;
+        height: 175px;
+        position: relative;
+        margin-bottom: 30px;
+        overflow: hidden; }
+        .p-portfolio .content-wrapper ul li a .hover-parent:hover .hover-mask {
+          padding-bottom: 30px; }
+        .p-portfolio .content-wrapper ul li a .hover-parent .hover-mask {
+          width: 250px;
+          height: 175px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background: rgba(0, 0, 0, .5);
+          opacity: 1;
+          -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+          color: #fff;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-align: center;
+          padding-bottom: 30px; }
 
 @media screen and (max-width: 767px) {
   .p-portfolio .content-wrapper ul {
@@ -637,5 +641,34 @@ header nav li a {
   .p-portfolio .content-wrapper ul li {
     width: 90%;
     margin: 0 auto 20px auto; } }
+
+/* 全体のスタイル */
+.swiper-wrapper {
+  width: 100%;
+  height: 250px; }
+
+/* 全スライド共通スタイル */
+.swiper-slide {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 250px; }
+
+/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+.swiper-slide:nth-child(4n+1) {
+  background-color: #EECB27; }
+
+/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
+.swiper-slide:nth-child(4n+2) {
+  background-color: #E13239; }
+
+/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
+.swiper-slide:nth-child(4n+3) {
+  background-color: #1F1762; }
+
+/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
+.swiper-slide:nth-child(4n+4) {
+  background-color: #BEDAE5; }
 
 /*# sourceMappingURL=maps/style.css.map */
