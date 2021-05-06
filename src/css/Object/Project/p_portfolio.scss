@@ -1,130 +1,49 @@
 .p-portfolio {
-  padding: 10% 0;
-  position: relative;
+  width:90%;
+  margin: 50px auto;
+  padding: 20px;
+  background: antiquewhite;
+  border-radius: 10px;
 
-    .content-wrapper {
-        ul {
-          display: -ms-flexbox;
-          display: -webkit-flex;
+  .content-wrapper {
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+        .item-image {
+          width: 50%;
+        }
+        .item-text {
+          font-size: 0.8rem;
           display: flex;
-          -ms-flex-pack: justify;
-          -webkit-justify-content:space-between;
-          justify-content: space-between;
-          -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-
-            li {
-              width: 48%;
-              position: relative;
-
-                // figure::after {
-                //   content: "";
-                //   position: absolute;
-                //   top: 0;
-                //   left: 0;
-                //   width: 100%;
-                //   padding-top: 43%;
-                //   background: rgba(50, 50, 50, 0.7);
-                //   z-index: 1;
-                //   transition: all .6s ease;
-                // }
-
-                // a:hover figure::after {
-                //   background: rgba(50, 50, 50, 0.4);
-                //   transition: all .6s ease;
-                // }
-
-                // span {
-                //   position: absolute;
-                //   width: 100%;
-                //   top: 50%;
-                //   left: 50%;
-                //   z-index: 2;
-                //   color: #fff;
-                //   font-size: 2rem;
-                //   text-align: center;
-                // }
-
-                a {
-
-                  .hover-parent {
-                    width: 250px;
-                    height: 175px;
-                    position: relative;
-                    margin-bottom: 30px;
-                    overflow: hidden;
-
-                      &:hover .hover-mask {
-                        padding-bottom: 30px;
-                      }
-
-                      .hover-mask {
-                        width: 250px;
-                        height: 175px;
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        background: rgba(0, 0, 0, 0.5);
-                        opacity: 1;
-                        transition: all 0.6s ease;
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        padding-bottom: 30px;
-                      }
-                  }
+          flex-flow: column;
+          // flex: 1;
+          justify-content: center;
+          align-content: center;
+        }
+        .item-link {
+          display: flex;
+          justify-content: space-around;
+          font-size: 1.1rem;
+            a {
+              color: #000;
+                &:hover {
+                  color: tomato;
                 }
             }
         }
     }
-}
-
-@media screen and (max-width:767px) {
-  .p-portfolio .content-wrapper ul {
-    transform: none;
-      li span {
-        transform: translate(-50%,-50%);
-        font-size: 1.75rem;
-      }
   }
 }
 
-@media screen and (max-width:479px) {
-  .p-portfolio .content-wrapper ul li {
-    width: 90%;
-    margin: 0 auto 20px auto;
+@media screen and (max-width:990px){
+  .item-button {
+    margin-bottom:10px;
   }
 }
 
-/* 全体のスタイル */
-.swiper-wrapper {
-	width: 100%;
-	height: 250px;
-}
-/* 全スライド共通スタイル */
-.swiper-slide {
-	color: #ffffff;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	line-height: 250px;
-}
-/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
-.swiper-slide:nth-child(4n+1) {
-	background-color: #EECB27;
-}
-/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
-.swiper-slide:nth-child(4n+2) {
-	background-color: #E13239;
-}
-/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
-.swiper-slide:nth-child(4n+3) {
-	background-color: #1F1762;
-}
-/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
-.swiper-slide:nth-child(4n+4) {
-	background-color: #BEDAE5;
+@media screen and (max-width:800px){
+  .flex-test {
+     flex-direction: column;
+  }
 }
