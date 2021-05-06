@@ -585,11 +585,11 @@ header nav li a {
 
 .p-portfolio {
   width: 90%;
-  margin: 50px auto;
-  padding: 20px;
-  background: antiquewhite;
-  border-radius: 10px; }
+  margin: 50px auto; }
   .p-portfolio .content-wrapper .item {
+    padding: 20px;
+    border-radius: 10px;
+    background: antiquewhite;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -598,10 +598,16 @@ header nav li a {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px; }
     .p-portfolio .content-wrapper .item .item-image {
-      width: 50%; }
+      width: 50%;
+      height: auto; }
     .p-portfolio .content-wrapper .item .item-text {
+      width: 50%;
       font-size: 12.8px;
       font-size: 0.8rem;
       display: -webkit-box;
@@ -611,6 +617,7 @@ header nav li a {
       -webkit-box-direction: normal;
           -ms-flex-flow: column;
               flex-flow: column;
+      padding-left: 50px;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -629,15 +636,17 @@ header nav li a {
         .p-portfolio .content-wrapper .item .item-link a:hover {
           color: tomato; }
 
-@media screen and (max-width: 990px) {
-  .item-button {
-    margin-bottom: 10px; } }
-
-@media screen and (max-width: 800px) {
-  .flex-test {
+@media screen and (max-width: 740px) {
+  .p-portfolio .content-wrapper .item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    .p-portfolio .content-wrapper .item .item-image {
+      width: 90%;
+      margin-bottom: 20px; }
+    .p-portfolio .content-wrapper .item .item-text {
+      padding: 0;
+      width: auto; } }
 
 /*# sourceMappingURL=maps/style.css.map */

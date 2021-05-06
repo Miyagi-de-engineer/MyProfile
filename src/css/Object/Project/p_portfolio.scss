@@ -1,23 +1,29 @@
 .p-portfolio {
   width:90%;
   margin: 50px auto;
-  padding: 20px;
-  background: antiquewhite;
-  border-radius: 10px;
+
 
   .content-wrapper {
     .item {
+      padding: 20px;
+      border-radius: 10px;
+      background: antiquewhite;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
+      align-items: center;
+      margin-bottom: 20px;
         .item-image {
           width: 50%;
+          height: auto;
+
         }
         .item-text {
+          width: 50%;
           font-size: 0.8rem;
           display: flex;
           flex-flow: column;
-          // flex: 1;
+          padding-left: 50px;
           justify-content: center;
           align-content: center;
         }
@@ -36,14 +42,19 @@
   }
 }
 
-@media screen and (max-width:990px){
-  .item-button {
-    margin-bottom:10px;
-  }
-}
+@media screen and (max-width:740px){
+  .p-portfolio .content-wrapper {
 
-@media screen and (max-width:800px){
-  .flex-test {
-     flex-direction: column;
+      .item {
+        flex-flow: column;
+          .item-image {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+          .item-text {
+            padding: 0;
+            width: auto;
+          }
+      }
   }
 }
