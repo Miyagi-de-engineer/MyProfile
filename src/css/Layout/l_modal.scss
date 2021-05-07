@@ -1,0 +1,27 @@
+.remodal {
+  position: relative;
+  padding: 25px;
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+      }
+      .logo-html {
+        color: orange;
+      }
+      .logo-css {
+        color: skyblue;
+      }
+      .remodal-text {
+        font-size: 0.8rem;
+      }
+      .remodal-cancel {
+        color: #fff;
+        background: #000000;
+        width: 100%;
+        margin-top: 25px;
+            &:hover {
+              background: #333;
+            }
+      }
+}
