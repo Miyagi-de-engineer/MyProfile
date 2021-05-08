@@ -86,7 +86,7 @@
                 </tr>
               </tbody>
             </table>
-            <p class="btn"><a href="#">more</a></p>
+            <p class="btn"><a href="#modal_b">more</a></p>
           </div>
         </section>
       </article>
@@ -178,7 +178,7 @@
               <p>
                 主な使用技術 <br>
                 LN : HTML5,CSS3 <br>
-                FW : SCSS(FLOCSS記法)<br>
+                FW : SCSS(FLOCSS記法),jQuery(remodal.js)<br>
                 DB : Firebase <br>
                 API : なし<br>
                 PM : gulp,npm
@@ -217,14 +217,166 @@
     </section>
   </footer>
 
-  <div class="remodal" data-remodal-id="modal_c">
-    <div>
-      <img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" alt="125naroom">
-      <i class="fab fa-html5 fa-3x logo-html"></i>
-      <i class="fab fa-css3-alt fa-3x logo-css"></i>
-      <p class="remodal-text">フロントエンド</p>
-      <p class="remodal-text">HTML5,CSS3</p>
+
+  <!-- Modal -->
+  <div class="remodal" data-remodal-id="modal_b">
+    <div class="modal-b">
+      <table class="modal-table">
+        <tbody>
+          <tr>
+            <th>誕生年</th>
+            <td>1990年生まれ</td>
+          </tr>
+          <tr>
+            <th>強み</th>
+            <td>提案力・素直さ...営業経験年数(約8年),継続学習：160日突破</td>
+          </tr>
+          <tr>
+            <th>弱み</th>
+            <td>慎重・細かい...最適解を求めてしまい、時間がかかる</td>
+          </tr>
+          <tr>
+            <th>夢</th>
+            <td>たくさんのペット達が過ごせる家を作る(犬とインコが大好き!)</td>
+          </tr>
+          <tr>
+            <th>抱負</th>
+            <td>日本のDX化に貢献し、課題解決できるエンジニアになる！</td>
+          </tr>
+          <tr>
+            <th>経歴①：歯科IT営業</th>
+            <td>個人・大型のクリニック・医療法人に対し、デジタルソリューションを提案</td>
+          </tr>
+          <tr>
+            <th>経歴②：水族館営業</th>
+            <td>旅行会社との企画商品造成、教育旅行誘致、官民連携施策の企画・調整</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <button data-remodal-action="cancel" class="remodal-cancel">
+      閉じる
+    </button>
+  </div>
+
+  <div class="remodal" data-remodal-id="modal_c">
+
+    <div class="remodal-area">
+      <p class="remodal-text">コーディング</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fab fa-html5 fa-2x logo-html"></i>
+          <p class="logo-text">HTML5</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-css3-alt fa-2x logo-css"></i>
+          <p class="logo-text">CSS3</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-sass fa-2x logo-sass"></i>
+          <p class="logo-text">sass</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        サイトの模写や自作WEBサービスなどのコーディングが可能です。
+        CSSフレームワークはBootstrapが使用可能。
+        CSS設計はSMACS、FLOCSSを使用します。
+      </p>
+    </div>
+
+    <div class="remodal-area">
+      <p class="remodal-text">フロントエンド</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fab fa-js fa-2x logo-js"></i>
+          <p class="logo-text">javascript</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-vuejs fa-2x logo-vue"></i>
+          <p class="logo-text">vue.js</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        JavascriptはES5、ES6について学習しています。
+        実務に直結させるために、Vue.jsを習得中で、
+        今後は、Node.js,TypeScriptの習得を目指しています。
+      </p>
+    </div>
+
+    <div class="remodal-area">
+      <p class="remodal-text">バックエンド</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fab fa-php fa-2x logo-php"></i>
+          <p class="logo-text">php</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-laravel fa-2x logo-laravel"></i>
+          <p class="logo-text">Laravel</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        php5及び7を中心に学習しています。
+        言語の理解をまずは行うために、フルスクラッチによるアウトプット制作後、
+        Laravelを用いた学習を行っています。※以下制作物参照
+      </p>
+    </div>
+
+    <div class="remodal-area">
+      <p class="remodal-text">データベース</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fas fa-database fa-2x"></i>
+          <p class="logo-text">MySQL</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        phpMyAdminの操作をはじめ、基本としたSQLコマンドの操作ができます。
+        DB設計はアウトプットによる経験を通し積み、正規化を行ったうえで開発を進めています。
+      </p>
+    </div>
+
+    <div class="remodal-area">
+      <p class="remodal-text">インフラ</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fab fa-aws fa-2x logo-aws"></i>
+          <p class="logo-text">AWS</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        AWSやHerokuを用いたデプロイを行っています。
+        AWS認定資格取得の勉強を、上記の技術取得と並行して行っています。
+      </p>
+    </div>
+
+    <div class="remodal-area">
+      <p class="remodal-text">その他</p>
+      <div class="remodal-logos">
+        <div class="logo">
+          <i class="fab fa-linux fa-2x logo-linux"></i></i>
+          <p class="logo-text">Linux</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-github fa-2x logo-github"></i>
+          <p class="logo-text">Github</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-gulp fa-2x logo-gulp"></i>
+          <p class="logo-text">gulp</p>
+        </div>
+        <div class="logo">
+          <i class="fab fa-npm fa-2x logo-npm"></i>
+          <p class="logo-text">npm</p>
+        </div>
+      </div>
+      <p class="remodal-text">
+        基本的なコマンドラインの操作が可能です。
+        アウトプット制作時はGithubにてソースコードの管理を行なっています。
+        パッケージ管理ツールの操作を取得し、開発環境整備を迅速に行います。
+      </p>
+    </div>
+
     <button data-remodal-action="cancel" class="remodal-cancel">
       閉じる
     </button>

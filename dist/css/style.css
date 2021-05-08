@@ -434,24 +434,65 @@ header nav li a {
 .remodal {
   position: relative;
   padding: 25px; }
-  .remodal img {
-    width: 100%;
-    height: auto;
-    vertical-align: top; }
-  .remodal .logo-html {
-    color: orange; }
-  .remodal .logo-css {
-    color: skyblue; }
-  .remodal .remodal-text {
+  .remodal .modal-b .modal-table {
     font-size: 12.8px;
     font-size: 0.8rem; }
-  .remodal .remodal-cancel {
-    color: #fff;
-    background: #000000;
+    .remodal .modal-b .modal-table th, .remodal .modal-b .modal-table td {
+      padding-bottom: 10px; }
+    .remodal .modal-b .modal-table th {
+      padding-right: 20px; }
+    .remodal .modal-b .modal-table td {
+      text-align: left; }
+  .remodal .remodal-area {
     width: 100%;
-    margin-top: 25px; }
-    .remodal .remodal-cancel:hover {
-      background: #333; }
+    margin-bottom: 30px; }
+    .remodal .remodal-area img {
+      width: 100%;
+      height: auto;
+      vertical-align: top; }
+    .remodal .remodal-area .remodal-text {
+      font-size: 12.8px;
+      font-size: 0.8rem; }
+    .remodal .remodal-area .remodal-cancel {
+      color: #fff;
+      background: #000000;
+      width: 100%;
+      margin-top: 25px; }
+      .remodal .remodal-area .remodal-cancel:hover {
+        background: #333; }
+    .remodal .remodal-area .remodal-logos {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
+      .remodal .remodal-area .remodal-logos .logo {
+        width: 33.3%; }
+      .remodal .remodal-area .remodal-logos .logo-text {
+        font-size: 12.8px;
+        font-size: 0.8rem; }
+      .remodal .remodal-area .remodal-logos .logo-html {
+        color: orange; }
+      .remodal .remodal-area .remodal-logos .logo-css {
+        color: skyblue; }
+      .remodal .remodal-area .remodal-logos .logo-sass {
+        color: violet; }
+      .remodal .remodal-area .remodal-logos .logo-js {
+        color: gold; }
+      .remodal .remodal-area .remodal-logos .logo-vue {
+        color: yellowgreen; }
+      .remodal .remodal-area .remodal-logos .logo-php {
+        color: blue; }
+      .remodal .remodal-area .remodal-logos .logo-laravel {
+        color: coral; }
+      .remodal .remodal-area .remodal-logos .logo-aws {
+        color: orange; }
+      .remodal .remodal-area .remodal-logos .logo-gulp {
+        color: orangered; }
+      .remodal .remodal-area .remodal-logos .logo-npm {
+        color: red; }
 
 /* MainVisual */
 .p-mainvisual {
