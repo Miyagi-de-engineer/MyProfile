@@ -28,7 +28,7 @@
 <body>
 
   <header class="l-header">
-    <h1>My Profile.</h1>
+    <h1 id="top">My Profile.</h1>
     <section class="l-hamburger">
       <a href="#" class="l-nav-button">
         <span></span>
@@ -38,11 +38,11 @@
     </section>
     <nav>
       <ul>
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">自己紹介</a></li>
-        <li><a href="#">スキルセット</a></li>
-        <li><a href="#">成果物</a></li>
-        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#profile">自己紹介</a></li>
+        <li><a href="#skillset">スキルセット</a></li>
+        <li><a href="#portfolio">成果物</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +57,7 @@
       <article class="p-topics">
         <section class="content-wrapper">
           <div class="heading">
-            <h2>
+            <h2 id="profile">
               自己紹介
             </h2>
           </div>
@@ -91,7 +91,7 @@
         </section>
       </article>
 
-      <article class="p-skillset">
+      <article id="skillset" class="p-skillset">
         <section class="content-wrapper">
           <div class="content">
             <h2>スキルセット</h2>
@@ -104,7 +104,7 @@
       </article>
 
 
-      <article class="p-portfolio">
+      <article id="portfolio" class="p-portfolio">
         <section class="content-wrapper">
 
           <div class="item">
@@ -194,12 +194,10 @@
             </div>
           </div>
 
-
-
         </section>
       </article>
 
-      <article class="p-contact">
+      <article id="contact" class="p-contact">
         <ul>
           <li><a href="#">お問い合わせ</a></li>
         </ul>
@@ -213,7 +211,19 @@
 
   <footer class="l-footer">
     <section class="content-wrapper">
-
+      <div class="high">
+        <h1>
+          <a href="#top">
+            My Profile.
+          </a>
+        </h1>
+        <ul>
+          <li><a href="#profile">自己紹介</a></li>
+          <li><a href="#skillset">スキルセット</a></li>
+          <li><a href="#portfolio">制作物</a></li>
+        </ul>
+      </div>
+      <p>&copy;Miyagi_de_engineer</p>
     </section>
   </footer>
 
