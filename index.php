@@ -29,20 +29,16 @@
 
   <header class="l-header">
     <h1 id="top">My Profile.</h1>
-    <section class="l-hamburger">
-      <a href="#" class="l-nav-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </section>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+    </div>
     <nav>
-      <ul>
-        <li><a href="#top">TOP</a></li>
-        <li><a href="#profile">自己紹介</a></li>
-        <li><a href="#skillset">スキルセット</a></li>
-        <li><a href="#portfolio">成果物</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
+      <ul class="menu">
+        <li class="menu__item"><a href="#top">TOP</a></li>
+        <li class="menu__item"><a href="#profile">自己紹介</a></li>
+        <li class="menu__item"><a href="#skillset">スキルセット</a></li>
+        <li class="menu__item"><a href="#portfolio">成果物</a></li>
+        <li class="menu__item"><a href="#contact">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -203,7 +199,12 @@
         </ul>
       </article>
 
-
+      <!-- jQuery　トップへ戻るボタン -->
+      <p id="page-top">
+        <a href="#wrap">
+          <i class="fas fa-arrow-circle-up fa-2x"></i>
+        </a>
+      </p>
 
 
     </main>
@@ -392,6 +393,8 @@
     </button>
   </div>
 
+  <script src="./dist/js/humburger.js"></script>
+  <script src="./dist/js/backToTop.js"></script>
 
 </body>
 

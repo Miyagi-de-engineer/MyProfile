@@ -375,13 +375,14 @@ section h2 {
           align-items: center;
   width: 100%;
   height: 100px;
-  position: absolute;
-  z-index: 1; }
+  position: absolute; }
   .l-header h1 {
     margin: 0 0 0 25px;
     font-size: 40px;
     font-size: 2.5rem;
     color: #fff; }
+  .l-header .menu-btn {
+    display: none; }
   .l-header nav ul {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -400,36 +401,75 @@ header nav li a {
     opacity: 0.6; }
 
 @media screen and (max-width: 1199px) {
-  .l-hamburger {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 30px;
-    height: 26px;
-    cursor: pointer; }
-  header nav {
-    display: none; }
-  .l-nav-button {
-    position: relative;
-    width: 30px;
-    height: 26px;
-    display: inline-block; }
-    .l-nav-button span {
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #fff; }
-      .l-nav-button span:nth-child(1) {
-        top: 0; }
-      .l-nav-button span:nth-child(2) {
-        top: 11px; }
-      .l-nav-button span:nth-child(3) {
-        bottom: 0; } }
+  .l-header {
+    /*----------------------------
+      * メニュー開閉ボタン
+      *----------------------------*/
+    /*----------------------------
+      * メニュー本体
+      *----------------------------*/ }
+    .l-header .menu-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #333;
+      color: #fff;
+      z-index: 11; }
+    .l-header nav .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      width: 100vw;
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background: #555;
+      /*----------------------------
+        * アニメーション部分
+        *----------------------------*/
+      -webkit-transform: translateX(100vw);
+              transform: translateX(100vw);
+      -webkit-transition: all .5s linear;
+      transition: all .5s linear;
+      /*----------------------------
+        * メニュー本体
+        *----------------------------*/ }
+      .l-header nav .menu.is-active {
+        -webkit-transform: translateX(0);
+                transform: translateX(0); }
+      .l-header nav .menu .menu__item {
+        width: 100%;
+        height: auto;
+        padding: .5em 1em;
+        text-align: center;
+        color: #fff;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+        .l-header nav .menu .menu__item a:hover {
+          color: orange; } }
 
 .remodal {
   position: relative;
@@ -545,7 +585,8 @@ header nav li a {
 
 /* MainVisual */
 .p-mainvisual {
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .p-mainvisual img {
     height: 700px;
     -o-object-fit: cover;
@@ -560,7 +601,6 @@ header nav li a {
     left: 10%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    z-index: 1;
     font-size: 5vw;
     color: #fff; }
 
@@ -788,6 +828,7 @@ header nav li a {
     -ms-flex-pack: center;
     -webkit-box-pack: center;
             justify-content: center;
+    position: relative;
     z-index: 1;
     width: 100%; }
     .p-contact ul li {
@@ -804,5 +845,26 @@ header nav li a {
         .p-contact ul li a:hover {
           background: #fff;
           color: #333; }
+
+#page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  font-size: 77%;
+  z-index: 9; }
+  #page-top a i {
+    color: #000;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease; }
+    #page-top a i:hover {
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      text-decoration: none;
+      color: chocolate; }
 
 /*# sourceMappingURL=maps/style.css.map */
