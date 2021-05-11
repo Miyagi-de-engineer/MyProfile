@@ -195,7 +195,7 @@
 
       <article id="contact" class="p-contact">
         <ul>
-          <li><a href="contact.php">お問い合わせ</a></li>
+          <li><a href="https://twitter.com/messages/compose?recipient_id=1327393012930920450">お問い合わせ</a></li>
         </ul>
       </article>
 
