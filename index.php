@@ -82,7 +82,7 @@
                 </tr>
               </tbody>
             </table>
-            <p class="btn"><a href="#modal_b">more</a></p>
+            <p class="topic-btn"><a href="#modal_b">more</a></p>
           </div>
         </section>
       </article>
@@ -92,8 +92,8 @@
           <div class="content">
             <h2>スキルセット</h2>
             <p>やれる事からコツコツと。<br>積み重ねを大切に。</p>
-            <p class="btn">
-              <a href="#modal_c" class="btn">more</a>
+            <p class="skill-btn">
+              <a href="#modal_c">more</a>
             </p>
           </div>
         </section>
@@ -102,7 +102,7 @@
 
       <article id="portfolio" class="p-portfolio">
         <section class="content-wrapper">
-
+          <h3>ポートフォリオ -Portfolio-</h3>
           <div class="item">
             <div class="item-image">
               <img src="./dist/images/PF-1.png" alt="">
@@ -195,7 +195,7 @@
 
       <article id="contact" class="p-contact">
         <ul>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="contact.php">お問い合わせ</a></li>
         </ul>
       </article>
 
@@ -205,8 +205,6 @@
           <i class="fas fa-arrow-circle-up fa-2x"></i>
         </a>
       </p>
-
-
     </main>
   </div>
 
@@ -228,8 +226,8 @@
     </section>
   </footer>
 
-
   <!-- Modal -->
+  <!-- 自己紹介 -->
   <div class="remodal" data-remodal-id="modal_b">
     <div class="modal-b">
       <table class="modal-table">
@@ -270,8 +268,8 @@
     </button>
   </div>
 
+  <!-- スキル説明 -->
   <div class="remodal" data-remodal-id="modal_c">
-
     <div class="remodal-area">
       <p class="remodal-text">コーディング</p>
       <div class="remodal-logos">
@@ -392,6 +390,8 @@
       閉じる
     </button>
   </div>
+
+  <!-- Modal -->
 
   <script src="./dist/js/humburger.js"></script>
   <script src="./dist/js/backToTop.js"></script>
